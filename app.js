@@ -7,5 +7,9 @@ function validarNome() {
     if (amigos.includes(nome)) {
         alert(`O nome ${nome} já foi adicionado!`);
     }
+    //Função para verificar se o campo está vazio
+    else if(nome == ''){
+        alert(`Digite um nome para adicionar!`);
+    }
     
 }
