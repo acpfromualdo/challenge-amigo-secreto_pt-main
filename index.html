@@ -23,13 +23,14 @@
                 <input type="text" id="nomeAdicionado" class="input-name" placeholder="Digite um nome">
                 <button class="button-add" onclick="validarNome()">Adicionar</button>
             </div>
+
             <div class="input-wrapper">
                 <input type="text" id="nomeRemovido" class="input-name" placeholder="Digite um nome">
                 <button class="button-remove" onclick="removerNome()">Remover</button>
             </div>
            
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+            <ul id="listaResultado" class="result-list" aria-live="polite"></ul>
 
             <div class="button-container">
                 <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
