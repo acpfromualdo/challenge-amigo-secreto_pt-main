@@ -11,6 +11,17 @@ function validarNome() {
     else if(nome == ''){
         alert(`Digite um nome para adicionar!`);
     }
+}
+    //Função para remover nome
+function removerNome() {
+    let nomeAmigo = document.querySelector('#nomeRemovido').value;
+    if (!amigos.includes(nomeAmigo)) {
+        amigos = amos.filter((amigo) => amigo !== nomeAmigo);
+        alert(`O nome ${nomeAmigo} foi excluído!`);
+        limparCampo('nomeRemovido');
+        limparListas();
+        aparecerNomeAmigo();
+    }
     //Função para adicionar o nome na lista
     else {
         amigos.push(nome);
@@ -18,6 +29,7 @@ function validarNome() {
         aparecerNomeAmigo();
         limparCampo('nomeAdicionado');
     }
+}
     //Função aparecer nome do amigo
     function aparecerNomeAmigo() {
         let listaAmigos = document.querySelector('#listaAmigos');
