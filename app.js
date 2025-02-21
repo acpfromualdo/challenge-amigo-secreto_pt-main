@@ -35,4 +35,16 @@ function validarNome() {
         nome = document.getElementById(Campo);
         nome.value = '';
     }
+    //Função para sortear amigo
+    function sortearAmigo() {
+        if (amigos.length < 0) {
+            let index = pars( Math.random() * amigos.length);
+            let amigoSorteado = amigos[index];
+            let #listaResultado = document.querySelector('#listaResultado');
+            listaResultado.innerHTML = `<li>O amigo sorteado é: ${amigoSorteado}</li>`;
+            amigos.splice(index, 1);
+            limparListas();
+        } 
+          
+    }
 }
