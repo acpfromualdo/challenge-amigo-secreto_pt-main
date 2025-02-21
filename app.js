@@ -18,5 +18,11 @@ function validarNome() {
         aparecerNomeAmigo();
         limparCampo('nomeAdicionado');
     }
-    
+    //Função aparecer nome do amigo
+    function aparecerNomeAmigo() {
+        let listaAmigos = document.querySelector('#listaAmigos');
+        for (let i = 0; i < amigos.length; i++) {
+            listaAmigos.innerHTML += `<li>${amigos[i]}</li>`;
+        });
+    }
 }
