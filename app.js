@@ -25,4 +25,9 @@ function validarNome() {
             listaAmigos.innerHTML += `<li>${amigos[i]}</li>`;
         });
     }
+    //Função para limpar lista
+    function limparListas() {
+        document.querySelector('#listaAmigos').innerHTML = '';
+        document.querySelector('#listaResultado').innerHTML = '';
+    }
 }
