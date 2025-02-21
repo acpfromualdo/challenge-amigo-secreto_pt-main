@@ -30,4 +30,9 @@ function validarNome() {
         document.querySelector('#listaAmigos').innerHTML = '';
         document.querySelector('#listaResultado').innerHTML = '';
     }
+    //Função para limpar campo
+    function limparCampo(Campo) {
+        nome = document.getElementById(Campo);
+        nome.value = '';
+    }
 }
