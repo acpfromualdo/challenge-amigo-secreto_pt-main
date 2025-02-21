@@ -11,5 +11,12 @@ function validarNome() {
     else if(nome == ''){
         alert(`Digite um nome para adicionar!`);
     }
+    //Função para adicionar o nome na lista
+    else {
+        amigos.push(nome);
+        limparListas();
+        aparecerNomeAmigo();
+        limparCampo('nomeAdicionado');
+    }
     
 }
