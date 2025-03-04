@@ -20,18 +20,18 @@ function validarNome() {
     //Função para remover nome
 function removerNome() {
     let nomeAmigo = document.querySelector('#nomeRemovido').value;
-    if (!amigos.includes(nomeAmigo)) {
+    if (nomeAmigo == '') {
+        alert('Nenhum nome selecionado');
+        limparCampo('nomeRemovido');
+        return; // Adicione um retorno aqui para evitar continuar a execução
+    }
+    if (amigos.includes(nomeAmigo)) {
         amigos = amigos.filter((amigo) => amigo !== nomeAmigo);
         alert(`O nome ${nomeAmigo} foi excluído!`);
         limparCampo('nomeRemovido');
         limparListas();
         aparecerNomeAmigo();
-    }
-    else if (nomeAmigo == '') {
-        alert('Nenhum nome selecionado');
-        limparCampo('nomeRemovido');
-    }
-    else {
+    } else {
         alert(`O nome ${nomeAmigo} não foi adicionado!`);
     }
 }
