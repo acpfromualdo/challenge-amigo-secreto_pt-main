@@ -11,10 +11,9 @@ Este projeto faz parte de um desafio proposto pelo curso da **Alura**, onde dese
 
 ## 💻 Como acessar?
 
-Você pode testar o jogo localmente executando um servidor web (por exemplo, com a extensão **Live Server** no **VS Code**).  
-Se o jogo já estiver hospedado, acesse pelo link abaixo:
+Você pode testar o jogo pelo link abaixo:
 
-➡️ [Jogar agora](http://127.0.0.1:5500/index.html)
+➡️ [Jogar agora](https://challenge-amigo-secreto-pt-main-alpha.vercel.app/)
 
 ## 🖼️ Visual do Jogo
 
@@ -24,10 +23,11 @@ Veja como ficou a interface do jogo:
 
 ---
 
-### 💡 Dicas de Melhoria:
-1. **Hospedagem Online:** Para facilitar o acesso, hospede o jogo em uma plataforma como **GitHub Pages**, **Netlify** ou **Vercel**.
-2. **Contribuições:** Sinta-se à vontade para enviar sugestões ou melhorias por meio de **Pull Requests**.
+### 💡 Ideias são sempre bem vindas:
+1. **Contribuições:** Sinta-se à vontade para enviar sugestões ou melhorias por meio de **Pull Requests**.
 
 ---
 
 Gostou do projeto? Deixe uma estrela ⭐ no repositório!
+
+
